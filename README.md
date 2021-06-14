@@ -42,7 +42,10 @@ Find the file `index.js` and complete the tasks.
 
 Edit the `ReadMe` file with your answers.
 
-1. In your own words, define closure (1-2 sentences).
+1. In your own words, define closure (1-2 sentences). 
+
+Closure is when a function reaches into it's parent scope to grab a variable that has already been defined.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,9 +67,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+Closure is happening at the console.log in the string interpolation where it is calling for name. You can tell because it is grabbing the variable name from the parent function personalDice.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+The name Dan will always be the same unless they pass something else in for dan's roll. But the number rolled will change.
+
 c. What is the lexical scope of `newRoll`? 
 
+newRoll is function scoped. 
 
 ### Task 3 - Stretch Goals
 
